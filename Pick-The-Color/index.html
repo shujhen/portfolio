@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pick The Color - 色弱測驗小遊戲</title>
+    <link rel="stylesheet" href="./css/index.css">
+  </head>
+  <body>
+    <h1>色弱測驗小遊戲</h1>
+    <!-- 開始頁 -->
+    <div class="page startPage">
+      <h2>Pick The Color!</h2>
+      <p>找出所有方塊中顏色最淺的一個</p>
+      <p>Click on the box that has the lightest color.</p>
+      <button class="btn startBtn">開始</button>
+    </div>
+    <!-- 遊戲頁 -->
+    <div class="page playPage">
+      <h2>關卡 <span id="gate">1</span></h2>
+      <p>倒數 <span id="countdown">30</span> 秒</p>
+      <div class="playground"></div>
+      <button class="btn pauseBtn">暫停</button>
+    </div>
+    <!-- 暫停頁 -->
+    <div class="page pausePage">
+      <h2>Take a Break!</h2>
+      <p>剩餘 <span id="pauseCountdown">30</span> 秒</p>
+      <p>讓眼睛休息一下吧!</p>
+      <button class="btn restartBtn">繼續</button>
+    </div>
+    <!-- 結束頁 -->
+    <div class="page endPage">
+      <h2>Time's Up!</h2>
+      <p id="epilogue"></p>
+      <button class="btn againBtn">再玩一次</button>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
