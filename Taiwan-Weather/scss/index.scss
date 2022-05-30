@@ -1,0 +1,239 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #c2f1ff;
+  text-align: center;
+}
+h1 {
+  margin: 30px 0px;
+}
+p {
+  margin: 0px;
+}
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
+  .map {
+    width: 50%;
+    .showCardsBtn {
+      text-decoration: none;
+      border: 1px solid #197ac9;
+      border-radius: 10px;
+      padding: 10px 20px;
+      font-weight: 600;
+      color: #000;
+      background-color: #e6f8fc;
+      &:hover {
+        background-color: #d5fcff;
+      }
+      &:focus {
+        background-color: #aee9f3;
+      }
+    }
+    svg {
+      max-width: 500px;
+      path {
+        fill: #e6f8fc;
+        stroke: #197ac9;
+        stroke-width: 1px;
+        stroke-miterlimit: 10;
+        stroke-dashoffset: 0 !important;
+      }
+      a:hover path {
+        fill: #d5fcff;
+      }
+      a:focus path {
+        fill: #aee9f3;
+      }
+    }
+  }
+}
+.content {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  position: relative;
+  min-width: 220px;
+  font-size: 14px;
+  margin: 20px 5px;
+}
+.none {
+  display: none;
+}
+.weather {
+  border: 1px solid #000;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.time {
+  padding: 16px 0px;
+}
+.time0 {
+  padding-top: 30px;
+  background-color: #d5fcff;
+}
+.time1 {
+  color: #eef;
+  background-color: #53acaf;
+}
+.time2 {
+  background-color: #aee9f3;
+}
+.cityName {
+  position: absolute;
+  font-size: 25px;
+  white-space: nowrap;
+  color: #eef;
+  background-color: #0e8c91;
+  padding: 5px 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.temperature {
+  font-size: 20px;
+  font-weight: 600;
+}
+.wx {
+  font-size: 18px;
+  font-weight: 600;
+}
+// 晴天
+.wx-1 {
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  background-image: url('../images/weather-icons.svg');
+  background-repeat: no-repeat;
+  background-position: -31px -45px;
+  background-size: 306px 396px;
+}
+// 陰天有太陽
+.wx-2,
+.wx-3 {
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  background-image: url('../images/weather-icons.svg');
+  background-repeat: no-repeat;
+  background-position: -31px -115px;
+  background-size: 306px 396px;
+}
+// 陰天
+.wx-4,
+.wx-5,
+.wx-6,
+.wx-7 {
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  background-image: url('../images/weather-icons.svg');
+  background-repeat: no-repeat;
+  background-position: -241px -45px;
+  background-size: 306px 396px;
+}
+
+// 陰天有雨有太陽
+.wx-8,
+.wx-19,
+.wx-20 {
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  background-image: url('../images/weather-icons.svg');
+  background-repeat: no-repeat;
+  background-position: -31px -183px;
+  background-size: 306px 396px;
+}
+// 陰天有雨/雨天
+.wx-9,
+.wx-10,
+.wx-11,
+.wx-12,
+.wx-13,
+.wx-14,
+.wx-29,
+.wx-30 {
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  background-image: url('../images/weather-icons.svg');
+  background-repeat: no-repeat;
+  background-position: -190px -113px;
+  background-size: 306px 396px;
+}
+
+// 雷雨
+.wx-15,
+.wx-16,
+.wx-17,
+.wx-18,
+.wx-21,
+.wx-22,
+.wx-33,
+.wx-34,
+.wx-35,
+.wx-36 {
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  background-image: url('../images/weather-icons.svg');
+  background-repeat: no-repeat;
+  background-position: -190px -180px;
+  background-size: 306px 396px;
+}
+// 有霧
+.wx-24,
+.wx-25,
+.wx-26,
+.wx-27,
+.wx-28,
+.wx-31,
+.wx-32,
+.wx-38,
+.wx-39,
+.wx-41 {
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  background-image: url('../images/weather-icons.svg');
+  background-repeat: no-repeat;
+  background-position: -241px -113px;
+  background-size: 306px 396px;
+}
+// 下雪
+.wx-23,
+.wx-37 {
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  background-image: url('../images/weather-icons.svg');
+  background-repeat: no-repeat;
+  background-position: -190px -250px;
+  background-size: 306px 396px;
+}
+
+// 冰霜
+.wx-42 {
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  background-image: url('../images/weather-icons.svg');
+  background-repeat: no-repeat;
+  background-position: -135px -320px;
+  background-size: 306px 396px;
+}
