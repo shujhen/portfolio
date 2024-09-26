@@ -1,6 +1,6 @@
 // API 網址
 const url =
-  'https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-5E5AD224-B407-4A22-8ABD-BD9609C07782&format=JSON';
+  'https://opendata.cwa.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-5E5AD224-B407-4A22-8ABD-BD9609C07782&format=JSON';
 
 // 二維陣列應用
 const cities = [
